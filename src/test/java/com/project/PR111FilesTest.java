@@ -19,7 +19,11 @@ class PR111FilesTest {
         File carpeta = new File(directoriTemporal.toFile(), "myFiles");
 
         // Executar el mètode de gestió d'arxius passant la ruta del directori temporal
-        PR111Files.gestionarArxius(directoriTemporal.toString());
+        try {
+            PR111Files.gestionarArxius(directoriTemporal.toString());
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
 
         // Comprovar que la carpeta existeix
         assertTrue(carpeta.exists() && carpeta.isDirectory(), "La carpeta hauria d'existir");
