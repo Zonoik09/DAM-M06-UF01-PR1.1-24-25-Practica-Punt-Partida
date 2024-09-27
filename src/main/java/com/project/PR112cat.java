@@ -19,9 +19,12 @@ public class PR112cat {
 
     // Funció per mostrar el contingut de l'arxiu o el missatge d'error corresponent
     public static void mostrarContingutArxiu(String rutaArxiu) {
-        File file = new File(rutaArxiu);
         try {
-            if (!file.isDirectory()) {
+            File file = new File(rutaArxiu);
+            if (!file.exists()) {
+                System.out.println("El fitxer no existeix o no és accessible.");
+            }
+            else if (!file.isDirectory()) {
                 try (BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(file), StandardCharsets.UTF_8))) {
                     String linia;
                     while ((linia = br.readLine()) != null) {
@@ -30,16 +33,13 @@ public class PR112cat {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-            } else{
+            } else {
                 System.out.println("El path no correspon a un arxiu, sinó a una carpeta.");
             }
 
         } catch (Exception e) {
-            String text = ("El fitxer no existeix o no és accessible.");
-            throw new RuntimeException(text);
+            throw new RuntimeException(e);
         }
-
-
 
     }
 }
