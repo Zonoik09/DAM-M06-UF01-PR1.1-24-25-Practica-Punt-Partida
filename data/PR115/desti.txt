@@ -11,3 +11,16 @@ Advertències:
 Si l'arxiu de destinació ja existeix, el programa ha de mostrar un missatge d'advertència indicant que l'arxiu serà sobreescrit.
 Comportament final:
 El programa ha de mostrar un missatge indicant que la còpia s'ha realitzat correctament, o un missatge d'error si la còpia falla.
+Funcionalitat:
+Verificació de l'existència del fitxer:
+El programa ha de comprovar si el fitxer d'origen existeix i si és un fitxer de text.
+Còpia del contingut:
+El contingut del fitxer origen es copiarà línia a línia a l'arxiu de destinació.
+Codificació UTF-8:
+Totes les operacions de lectura i escriptura han de fer-se amb codificació UTF-8.
+Línia en blanc final:
+Si el fitxer d'origen acaba amb una línia en blanc, s'ha de copiar tal com està, afegint també la línia en blanc al fitxer de destinació.
+Advertències:
+Si l'arxiu de destinació ja existeix, el programa ha de mostrar un missatge d'advertència indicant que l'arxiu serà sobreescrit.
+Comportament final:
+El programa ha de mostrar un missatge indicant que la còpia s'ha realitzat correctament, o un missatge d'error si la còpia falla.
