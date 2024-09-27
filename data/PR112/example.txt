@@ -1,0 +1,9 @@
+Crea un programa anomenat PR112cat.java.
+Des dins del programa, realitza les següents tasques:
+El programa haurà d'acceptar com a entrada la ruta d'un arxiu de text com a argument a l'hora d'executar-lo. La ruta del fitxer es passarà com a paràmetre en executar el programa.
+Si la ruta proporcionada correspon a un fitxer de text:
+Llegeix el contingut del fitxer en codificació UTF-8.
+Mostra el contingut del fitxer per pantalla.
+Si la ruta proporcionada correspon a una carpeta, mostra el missatge: "El path no correspon a un arxiu, sinó a una carpeta.".
+Si la ruta proporcionada no correspon a un fitxer existent o es produeix qualsevol altre error, mostra el missatge: "El fitxer no existeix o no és accessible.".
+Nota: Gestiona adequadament possibles errors de lectura del fitxer i assegura que el programa no falli de manera abrupta. Assegura't que el contingut dels fitxers es llegeix amb la codificació UTF-8
